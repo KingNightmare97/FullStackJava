@@ -21,13 +21,16 @@ public class Ejercicio5 {
         
         System.out.println("Ingrese el Valor del Radio de una Circunferencia:");
         System.out.println("formatos esperados - x.x , xx.x");
+        // lo escaneo en formato string para luego hacer una verificacion
+            
         String radio = scn.nextLine();
-        
+        //verifico que ingrese solo numeros y en un formato esperado
         while (!radio.matches("\\d{1,2}\\.\\d{1}")) {            
             System.out.println("Ingrese el Valor del Radio de una Circunferencia Válido:");
             System.out.println("Recuerde los formatos esperados - x.x , xx.x");
             radio = scn.nextLine();
         }
+        // convierto el string a double
         double radio_conver = Double.parseDouble(radio);
         
         double area = Math.PI * (Math.pow(radio_conver, 2));

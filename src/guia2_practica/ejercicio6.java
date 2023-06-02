@@ -27,7 +27,7 @@ public class ejercicio6 {
         
     for(int x = 2; x <= max; x++){
         if(esPrimo(x)){
-            System.out.println(x+" es primo");
+            System.out.println(x+" es numero primo");
         }
     }
        

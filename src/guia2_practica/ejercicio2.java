@@ -14,7 +14,11 @@ public class ejercicio2 {
         System.out.println("Ingrese una palabra: ");
         String spalabra = scn.nextLine();
         
+        // paso la palabra a minuscula y remplazo las vocales con acento a sin acento
+        
         spalabra = spalabra.toLowerCase().replace("á", "a").replace("é", "e").replace("í", "i").replace("ó", "o").replace("ú", "u");
+        
+        // doy vuelta la palabra
         String reversa = new StringBuilder(spalabra).reverse().toString();
         
         if (reversa.equals(spalabra)) {

@@ -18,12 +18,15 @@ public class Ejercicio4 {
         
         for (int i = 0; i < vectorAltura.length; i++) {
             System.out.println("Ingrese la Altura nº " + (i+1) + ":");
+            // lo escaneo en formato string para luego hacer una verificacion
             altura1 = scn.nextLine();
+            //verifico que ingrese solo numeros y en un formato esperado
             while (!altura1.matches("\\d{1,}\\.\\d{2}")) {                
                 System.out.println("Debe ingresar una Altura Válida:");
                 System.out.println("Formato válido: 1.xx - 2.xx");
                 altura1 = scn.nextLine();
             }
+            // convierto el string a un double
             num1 = Double.parseDouble(altura1);
             vectorAltura[i] = num1;
             

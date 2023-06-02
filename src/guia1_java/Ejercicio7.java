@@ -16,12 +16,15 @@ public class Ejercicio7 {
         una variable auxiliar.
         */
         
+        // lo escaneo en formato string para luego hacer una verificacion
+            
+        
         System.out.println("Ingrese la primera edad:");
         String sEdad = scn.nextLine();
         
         System.out.println("Ingrese la segunda edad:");
         String sEdad2 = scn.nextLine();
-        
+        //verifico que ingrese solo numeros y en un formato esperado
         while (!sEdad.matches("\\d{1,2}") || !sEdad2.matches("\\d{1,2}")) {
             while (!sEdad.matches("\\d{1,2}")) {                
                 System.out.println("Debe ingresar una Primera Edad Válida:");
@@ -32,6 +35,7 @@ public class Ejercicio7 {
                 sEdad2 = scn.nextLine();
             }
         }
+        // convierto las 2 variables string a integer
         int edad_new1 = Integer.parseInt(sEdad);
         int edad_new2 = Integer.parseInt(sEdad2);
         int edad_cambio = edad_new2;

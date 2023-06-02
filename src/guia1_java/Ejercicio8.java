@@ -24,10 +24,13 @@ public class Ejercicio8 {
         Fahrenheit = 1,8 × Celsius
         */
         
+        // lo escaneo en formato string para luego hacer una verificacion
+            
+        
         System.out.println("Ingrese una temperatura en grados Celsius:");
         System.out.println("Formato esperado: x.x - xx.x");
         String sgrados = scn.nextLine();
-        
+        //verifico que ingrese solo numeros y en un formato esperado
         while (!sgrados.matches("\\d{1,2}\\.\\d{1}")) {            
             System.out.println("Ingrese una temperatura en grados Celsius Válida:");
             sgrados = scn.nextLine();
